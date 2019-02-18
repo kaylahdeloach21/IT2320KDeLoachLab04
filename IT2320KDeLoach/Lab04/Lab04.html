@@ -1,0 +1,70 @@
+"Money Back Offer! Get increased savings: $10.00 saves $1.00, $20.00 saves $2.00, and $50.00 ore more saves $5.00."
+int main()
+{
+Operand1 (first=1,last=);
+   %global gfirst glast;
+   %let gfirst=&first;
+   %let glast=&last;
+   Operand1 test&first-test&last;
+Operand1;
+Operand2 vars(first=1,last=);
+   %global gfirst glast;
+   %let gfirst=&first;
+   %let glast=&last;
+   Operand2 test&first-test&last;
+operand2 vars;
+    //declare arrays
+    string itemName[100];
+    double itemCost[100] = {0.0};
+
+    //declare variables
+var x = 5;         // assign the value 5 to x
+var y = 2;         // assign the value 2 to y
+var z = x + y;     // assign the value 7 to z (x + y)
+    string names = "";
+    double total = 0;
+    int numItems = 0;
+
+    //number of items
+    cout << "Enter number of grocery items you will be entering: ";
+    cin >> numItems;
+    cout << "\n";
+
+        for (int i = 1; i <= 100; i++)
+        {
+        cin >> itemName[i] >> itemCost[i];
+        }
+
+        //input message
+    cout << "Please enter the item names as one word only. Example: tomatoes\n" ;
+    cout << "Enter the cost as a decimal number. Example: 2.44\n\n";
+
+    //item name and price input
+    for (int i = 0; i < 3; ++i)
+    {
+        cout << "Enter item: ";
+        cin >> itemName[i];
+        cout << "Enter the cost of the " << itemName[i] << " $";
+        cin >> itemCost[i];
+        }
+
+        cout << "\n";
+
+    //Display Data
+      for (int i = 0; i < 3; ++i)
+{
+    cout << itemName[i];
+    cout << ' ';
+    cout << itemCost[i];
+    cout << endl;
+}
+
+//total calculations
+for (int i = 1; i <= 3; i++)
+{
+    total += itemCost[i];
+    cout << total;
+}
+
+
+return 0;
